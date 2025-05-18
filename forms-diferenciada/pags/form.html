@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingressos - JogosCon 2025</title>
+  <link rel="stylesheet" href=".././estilos/form-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../imgs/JogosCon.svg" class="logo">
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="./form.html">Ingressos</a>
+        </li>
+        <li>
+          <a href="https://www.lolja.com.br/">Loja</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <h1>Compre seu ingresso:</h1>
+
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" placeholder="Ex.: Ana Silva" required>
+
+      <div class="campo-duplo">
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="ana@email.com" required>
+        </div>
+        <div>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(11) 91234-5678" pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" title="Formato: (11) 91234-5678" required>
+        </div>
+      </div>
+
+      <label for="tipo-ingresso">Tipo de ingresso:</label>
+      <select id="tipo-ingresso" required>
+        <option value="" disabled selected>Selecione</option>
+        <option value="1">Sexta 3/out - R$ 119</option>
+        <option value="2">Sábado 4/out - R$ 139</option>
+        <option value="3">Domingo 5/out - R$ 139</option>
+        <option value="4">Passaporte 3 dias - R$ 359</option>
+      </select>
+
+
+      <label for="numero-cartao">Número do cartão:</label>
+      <input type="number" id="numero-cartao" name="numero-cartao" required>
+
+      <label for="titular">Nome do titular:</label>
+      <input type="text" id="titular" name="titular" inputmode="text" pattern="[A-Za-zÀ-ÿ\s]+" required>
+
+
+      <label for="validade">Data de validade:</label>
+      <input type="month" id="validade" name="validade" required>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" maxlength="3" required>
+
+      <label for="msg">Mensagem (opcional)</label>
+      <textarea id="msg" name="msg" rows="4" placeholder="Alguma necessidade especial ou dúvida?"></textarea>
+
+      <button type="submit" class="btn-enviar">Comprar Ingresso</button>
+    </form>
+  </main>
+
+  <footer>
+    <h2 style="margin-top: 30px; font-size: 3rem;">Parceiros:</h2>
+    <div class="parceiros">
+
+
+      <img src=".././imgs/parceiros/nintendo.png">
+
+      <img src=".././/imgs/parceiros/hyperx.png">
+      <img src=".././/imgs/parceiros/lg.png">
+      <img src=".././/imgs/parceiros/redragon.png ">
+      <img src=".././/imgs/parceiros/intel.png">
+
+    </div>
+    <div class="linha"></div>
+    <div class="redes-sociais">
+      <nav>
+        <ul>
+          <li>
+            <a href="https://instagram.com"><img src=".././imgs/icons/insta.png"></a>
+          </li>
+          <li>
+            <a href="https://youtube.com"><img src=".././imgs/icons/yt.svg" style="height: 45px; width: 60px;"></a>
+          </li>
+          <li>
+            <a href=" https://twitch.tv"><img src=".././imgs/icons/twitch.png"></a>
+          </li>
+          <li><a href="https://tiktok.com"><img src=".././imgs/icons/ttk.png"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="linha"></div>
+    <p>JogosCon &copy; Alguns direitos reservados.</p>
+  </footer>
+</body>
+
+</html>

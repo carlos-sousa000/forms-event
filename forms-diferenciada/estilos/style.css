@@ -8,11 +8,11 @@ body {
   box-sizing: border-box;
 }
 
+/* esqueci de usar :root e var */
 a,
 a:visited,
 a:active {
   text-decoration: none;
-
   color: #f2f7f2;
 }
 /*  */
@@ -54,7 +54,7 @@ nav a {
 /* CONTEUDO */
 /*  */
 .img-principal {
-  background-image: url("imgs/evento.jpg");
+  background-image: url(".././imgs/evento.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -106,7 +106,7 @@ nav a {
 /*  */
 .cta-fixo {
   position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Karla", Arial, Helvetica, sans-serif;
   right: 2rem;
   bottom: 2rem;
 }

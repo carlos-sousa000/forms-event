@@ -1,0 +1,108 @@
+@import url("./style.css");
+
+main {
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+form {
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  width: 500px;
+}
+
+form h1 {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  width: max-content;
+}
+form h1::after {
+  content: " ";
+  width: 100%;
+  height: 4px;
+  background-color: #e4572e;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -6px;
+  left: 0px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: 1rem/1 var(--ff-base);
+  margin-bottom: 18px;
+  resize: none;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: #ccc solid 1px;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.campo-duplo {
+  width: 100%;
+  display: flex;
+}
+
+.campo-duplo div {
+  flex: 1;
+}
+
+.btn-enviar {
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  background-color: white;
+  border: black solid 1px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.btn-enviar:hover {
+  /* background-color: var(c-laranja); */
+  background-color: #e4572e;
+  transition: 0.4s;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
